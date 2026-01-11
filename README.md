@@ -1,10 +1,14 @@
-# Node + Express Service Starter
+# Codewars TS challenge workflow
 
-This is a simple API sample in Node.js with express.js based on [Google Cloud Run Quickstart](https://cloud.google.com/run/docs/quickstarts/build-and-deploy/deploy-nodejs-service).
+your workflow is:
 
-## Getting Started
+- Write your code in each .ts script file from the `/src/codewars_scripts` directory.
 
-Server should run automatically when starting a workspace. To run manually, run:
-```sh
-npm run dev
+- Run `npm run build`. 
+This command will now first delete the old dist folder and then create a fresh one with all your .ts compiled files. 
+Also, consider if you installed NODEMON as dev dependency, this will compile for you automatically everytime you "save" a new change in the file.
+
+- Run your script with: 
+```
+node dist/codewars_scripts/your_script_name.js
 ```
