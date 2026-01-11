@@ -6,8 +6,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon --watch 'src/**' --ext 'ts,json' --exec 'npm run build && npm run start'",
-    "build": "tsc",
-    "start": "node dist/index.js"
+    "build": "npm run clean && tsc",
+    "start": "node dist/index.js",
+    "clean": "rimraf dist"
   },
   "author": "Google LLC",
   "license": "Apache-2.0",
@@ -15,8 +16,9 @@
     "express": "^4.21.2"
   },
   "devDependencies": {
+    "@types/node": "^20.12.12",
     "nodemon": "^3.1.0",
-    "typescript": "^5.4.5",
-    "@types/node": "^20.12.12"
+    "rimraf": "^6.1.2",
+    "typescript": "^5.4.5"
   }
 }
