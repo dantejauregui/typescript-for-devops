@@ -1,5 +1,6 @@
-# Codewars TS challenge workflow
+# TS Scripts
 
+## TS challenge workflow:
 your workflow is:
 
 - Write your code in each .ts script file from the `/src/codewars_scripts` directory.
